@@ -22,7 +22,11 @@
 @property (nonatomic,retain) UITextField *tEdit;
 
 - (IBAction)hello:(id)sender;
-- (IBAction)report:(id)sender;
+
 - (IBAction)valueChanged:(id)sender;
+
+-(IBAction)keyboardHide:(id)sender;
+
+- (IBAction)setText:(id)sender;
 
 @end

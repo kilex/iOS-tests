@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@class Second;
+
+@interface ViewController : UIViewController {
+    
+    IBOutlet Second *two;
+    
+}
+- (IBAction)next;
+- (IBAction)report:(id)sender;
+- (IBAction)testEvent:(UIButton *)sender forEvent:(UIEvent *)event;
 
 @end

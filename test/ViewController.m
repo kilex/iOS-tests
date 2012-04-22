@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Second.h"
 
 @interface ViewController ()
 
@@ -14,10 +15,24 @@
 
 @implementation ViewController
 
+
+- (IBAction)next {
+
+    [self presentModalViewController:two animated:YES];
+
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    report(3);
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+
+void report(int num) {
+    
+    NSLog(@"log - %d",num);
 }
 
 - (void)viewDidUnload
@@ -31,4 +46,11 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)report:(id)sender {
+    report(1);
+}
+
+- (IBAction)testEvent:(UIButton *)sender forEvent:(UIEvent *)event {
+    report(2);
+}
 @end

@@ -13,10 +13,16 @@
 @interface ViewController : UIViewController {
     
     IBOutlet Second *two;
+    IBOutlet UILabel *mainLabel;
+    IBOutlet UITextField *tEdit;
     
 }
-- (IBAction)next;
+
+@property (nonatomic,retain) UILabel *mainLabel;
+@property (nonatomic,retain) UITextField *tEdit;
+
+- (IBAction)hello:(id)sender;
 - (IBAction)report:(id)sender;
-- (IBAction)testEvent:(UIButton *)sender forEvent:(UIEvent *)event;
+- (IBAction)valueChanged:(id)sender;
 
 @end

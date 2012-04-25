@@ -23,13 +23,17 @@
 }
 
 - (IBAction)valueChanged:(id)sender {
-    NSLog(self.tEdit.text);
+    NSLog([NSString stringWithString:self.tEdit.text]);
 
 }
 - (IBAction)keyboardHide:(id)sender {
-    
+
 }
 
+- (IBAction)numKeyPressed:(id)sender {
+    currentNumber=(float)[sender tag];
+    self.tEdit.text=[NSString stringWithFormat:@"%f", currentNumber];
+}
 
 - (IBAction)setText:(id)sender {
     

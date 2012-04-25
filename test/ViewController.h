@@ -15,11 +15,12 @@
     IBOutlet Second *two;
     IBOutlet UILabel *mainLabel;
     IBOutlet UITextField *tEdit;
-    
+    float currentNumber;    
 }
 
 @property (nonatomic,retain) UILabel *mainLabel;
 @property (nonatomic,retain) UITextField *tEdit;
+
 
 - (IBAction)hello:(id)sender;
 
@@ -28,5 +29,6 @@
 -(IBAction)keyboardHide:(id)sender;
 
 - (IBAction)setText:(id)sender;
+- (IBAction)numKeyPressed:(id)sender;
 
 @end
